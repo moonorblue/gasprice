@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86FD3CC3C8EACD08720E869A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C93CEEAF49DA878A6C7021 /* libPods.a */; };
 		FC1B9FB31B77437E009BEC11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B9FB21B77437E009BEC11 /* main.m */; };
 		FC1B9FB61B77437E009BEC11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B9FB51B77437E009BEC11 /* AppDelegate.m */; };
 		FC1B9FB91B77437E009BEC11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B9FB81B77437E009BEC11 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		FC1B9FBE1B77437E009BEC11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1B9FBD1B77437E009BEC11 /* Images.xcassets */; };
 		FC1B9FC11B77437E009BEC11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1B9FBF1B77437E009BEC11 /* LaunchScreen.xib */; };
 		FC1B9FCD1B77437E009BEC11 /* GasPriceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B9FCC1B77437E009BEC11 /* GasPriceTests.m */; };
+		FC54F6521B80640500F6591E /* UIButtonBarRefresh.png in Resources */ = {isa = PBXBuildFile; fileRef = FC54F6501B80640500F6591E /* UIButtonBarRefresh.png */; };
+		FC54F6531B80640500F6591E /* UIButtonBarRefresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC54F6511B80640500F6591E /* UIButtonBarRefresh@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		158FA6A030474A263622E30A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6C30D4105EC0CADAF7A6B396 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B3C93CEEAF49DA878A6C7021 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1B9FAD1B77437E009BEC11 /* GasPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1B9FB11B77437E009BEC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC1B9FB21B77437E009BEC11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		FC1B9FC61B77437E009BEC11 /* GasPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1B9FCB1B77437E009BEC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC1B9FCC1B77437E009BEC11 /* GasPriceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GasPriceTests.m; sourceTree = "<group>"; };
+		FC54F6501B80640500F6591E /* UIButtonBarRefresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarRefresh.png; sourceTree = "<group>"; };
+		FC54F6511B80640500F6591E /* UIButtonBarRefresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarRefresh@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FD3CC3C8EACD08720E869A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +69,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177F6384220F40339DA8C5EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3C93CEEAF49DA878A6C7021 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		681BB29D923E476AF8F2256B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158FA6A030474A263622E30A /* Pods.debug.xcconfig */,
+				6C30D4105EC0CADAF7A6B396 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC1B9FA41B77437E009BEC11 = {
 			isa = PBXGroup;
 			children = (
+				FC54F64F1B8063F900F6591E /* Img */,
 				FC1B9FAF1B77437E009BEC11 /* GasPrice */,
 				FC1B9FC91B77437E009BEC11 /* GasPriceTests */,
 				FC1B9FAE1B77437E009BEC11 /* Products */,
+				681BB29D923E476AF8F2256B /* Pods */,
+				177F6384220F40339DA8C5EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +148,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC54F64F1B8063F900F6591E /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				FC54F6501B80640500F6591E /* UIButtonBarRefresh.png */,
+				FC54F6511B80640500F6591E /* UIButtonBarRefresh@2x.png */,
+			);
+			name = Img;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC1B9FD01B77437E009BEC11 /* Build configuration list for PBXNativeTarget "GasPrice" */;
 			buildPhases = (
+				90A528404423B8D7C315BED5 /* Check Pods Manifest.lock */,
 				FC1B9FA91B77437E009BEC11 /* Sources */,
 				FC1B9FAA1B77437E009BEC11 /* Frameworks */,
 				FC1B9FAB1B77437E009BEC11 /* Resources */,
+				F2656548E4695C5A9CF18955 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +242,8 @@
 				FC1B9FBC1B77437E009BEC11 /* Main.storyboard in Resources */,
 				FC1B9FC11B77437E009BEC11 /* LaunchScreen.xib in Resources */,
 				FC1B9FBE1B77437E009BEC11 /* Images.xcassets in Resources */,
+				FC54F6521B80640500F6591E /* UIButtonBarRefresh.png in Resources */,
+				FC54F6531B80640500F6591E /* UIButtonBarRefresh@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +255,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90A528404423B8D7C315BED5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2656548E4695C5A9CF18955 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC1B9FA91B77437E009BEC11 /* Sources */ = {
@@ -347,6 +422,7 @@
 		};
 		FC1B9FD11B77437E009BEC11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158FA6A030474A263622E30A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GasPrice/Info.plist;
@@ -357,6 +433,7 @@
 		};
 		FC1B9FD21B77437E009BEC11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C30D4105EC0CADAF7A6B396 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GasPrice/Info.plist;
@@ -418,6 +495,7 @@
 				FC1B9FD21B77437E009BEC11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC1B9FD31B77437E009BEC11 /* Build configuration list for PBXNativeTarget "GasPriceTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				FC1B9FD51B77437E009BEC11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
