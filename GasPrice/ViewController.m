@@ -26,11 +26,15 @@ NSString* fpccDate;
     cpcArray = [NSArray array];
     fpccArray = [NSArray array];
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
     [self applyCooridinate];
     [self QueryData];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [self QueryData];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
